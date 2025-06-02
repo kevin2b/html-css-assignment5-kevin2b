@@ -1,0 +1,63 @@
+/** Fonts Imports **/
+@font-face {
+  font-family: "Space Mono";
+  font-display: swap;
+  src: url("./assets/fonts/Space_Mono/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-weight: 700;
+  src: url("./assets/fonts/Space_Mono/SpaceMono-Bold.ttf");
+}
+
+:root {
+  --minWidth: 20rem;
+  --maxWidth-mobile: 23.4375rem;
+  --maxWidth-desktop: 57.5rem;
+
+  --ff-base: "Space Mono", sans-serif;
+  --font-text-smaller: 0.82rem;
+  --font-text-small: 1rem;
+  --font-text-slight-small: 1.25rem;
+  --font-text: 1.5rem;
+  --font-text-large: 1.9rem;
+
+  @media (min-width: 50rem) {
+    --font-text-large: 2.9rem;
+    --font-text-smaller: 0.83rem;
+  }
+
+  --clr-strongCyan: hsl(172, 67%, 45%);
+  --clr-lightCyan: #9fe8df;
+  --clr-veryDarkCyan: hsl(183, 100%, 15%);
+  --clr-darkGrayishCyan: hsl(186, 14%, 43%);
+  --clr-grayishCyan: hsl(184, 14%, 56%);
+  --clr-lightGrayishCyan: hsl(185, 41%, 84%);
+  --clr-veryLightGrayishCyan: hsl(189, 41%, 97%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-red: #bb8a7a;
+  --clr-lightRed: #d28f7a;
+
+  --clr-background-primary: var(--clr-lightGrayishCyan);
+  --clr-background-secondary: var(--clr-white);
+  --clr-background-tertiary: var(--clr-veryLightGrayishCyan);
+  --clr-background-4: var(--clr-veryDarkCyan);
+  --clr-background-5: var(--clr-strongCyan);
+  --clr-background-6: var(--clr-lightCyan);
+  --clr-background-7: #0d686d;
+
+  --clr-text-primary: var(--clr-darkGrayishCyan);
+  --clr-text-secondary: var(--clr-grayishCyan);
+  --clr-text-tertiary: var(--clr-veryDarkCyan);
+  --clr-text-4: var(--clr-veryLightGrayishCyan);
+  --clr-text-5: var(--clr-white);
+  --clr-text-6: #045b62;
+  --clr-text-7: #a3b6b8;
+  --clr-text-8: var(--clr-lightGrayishCyan);
+  --clr-text-9: #568a90;
+  --clr-text-error: var(--clr-lightRed);
+
+  --clr-border: var(--clr-strongCyan);
+  --clr-border-error: var(--clr-red);
+}

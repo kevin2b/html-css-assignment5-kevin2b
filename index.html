@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="./modern-normalize.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="wrapper">
+    <header class="header-wrapper">
+      <img src="./assets/images/logo.svg" alt="Splitter logo" class="logo">
+    </header>
+    <article class="card-wrapper">
+      <section class="bill">
+        <div class="bill__entry">
+          <label for="js-bill-amount" class="bill__label">
+            Bill
+          </label>
+          <div class="input-wrapper">
+            <img src="./assets/images/icon-dollar.svg" alt="Dollar icon" class="input__prefix">
+            <input type="number" class="bill__input" id="js-bill-amount" placeholder="0" min="0.01" step="any" required>
+          </div>
+        </div>
+        <fieldset class="bill__tip-wrapper">
+          <legend class="bill__label bill-tip__label"> Select Tip % </legend>
+          <div class="bill-tip-group">
+            <label class="bill-tip__option">
+              <input type="radio" class="bill-tip js-bill-tip" name="tip" value="5">
+              5%
+            </label>
+            <label class="bill-tip__option">
+              <input type="radio" class="bill-tip js-bill-tip" name="tip" value="10">
+              10%
+            </label>
+            <label class="bill-tip__option">
+              <input type="radio" class="bill-tip js-bill-tip" name="tip" value="15">
+              15%
+            </label>
+            <label class="bill-tip__option">
+              <input type="radio" class="bill-tip js-bill-tip" name="tip" value="25">
+              25%
+            </label>
+            <label class="bill-tip__option">
+              <input type="radio" class="bill-tip js-bill-tip" name="tip" value="50">
+              50%
+            </label>
+            <label class="bill-tip__option bill-tip__option-custom">
+              <input type="radio" class="bill-tip js-bill-tip" name="tip" value="js-custom">
+              <span class="option__custom"> Custom </span>
+              <input type="number" class="bill-tip__custom js-hidden" id="js-bill-tip-custom" name="tip-custom" placeholder="0" min="0" step="any" required>
+            </label>
+          </div>
+        </fieldset>
+        <div class="bill__entry">
+          <div class="people-wrapper">
+            <label for="js-bill-people" class="bill__label">
+              Number of People
+            </label>
+            <p class="people__error js-hidden" id="js-people-error">
+              Can't be zero
+            </p>
+          </div>
+          <div class="input-wrapper input-wrapper__people" id="js-input-people-wrapper">
+            <img src="./assets/images/icon-person.svg" alt="People icon" class="input__prefix">
+            <input type="number" class="bill__input" id="js-bill-people" placeholder="0" min="1" step="1" required>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <div class="result__entry">
+          <div class="entry-wrapper">
+              <p class="entry__title">Tip Amount</p>
+              <p class="entry__text">/ person</p>
+          </div>
+          <p class="entry__value" id="js-result-tip"> $0.00</p>
+        </div>
+        <div class="result__entry">
+          <div class="entry-wrapper">
+              <p class="entry__title">Total</p>
+              <p class="entry__text">/ person</p>
+          </div>
+          <p class="entry__value" id="js-result-total"> $0.00</p>
+        </div>
+        <button class="result__reset" id="js-result-reset">
+          Reset
+        </button>
+      </section>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">kevin2b</a>.
+  </footer>
+</body>
+</html>
